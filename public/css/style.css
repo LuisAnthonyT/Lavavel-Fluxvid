@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+}
+/* Estilos para el contenedor principal */
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*  */
+.character {
+    flex: 0 0 calc(30% - 20px); /* Ajusta según sea necesario */
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+    box-sizing: border-box;
+}
+
+/* Estilos para los elementos de texto */
+span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilos para la imagen */
+img {
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+}
