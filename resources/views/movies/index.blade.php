@@ -8,6 +8,13 @@
        <a href="{{route('movies.show', $movie)}}">Título: {{$movie->title}}</a>
        <br>
        <a href="{{route('directors.show', $movie)}}">Director: {{ $movie->director->name}}</a>
+       @auth
+            @if ($movie->visibility == false)
+                <span>Disponible</span>
+            @else
+                <span>No disponible</span>
+            @endif
+       @endauth
        <hr>
     @empty
 
